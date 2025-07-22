@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Book a Call - Quality Intelligence</title>
+<link rel="icon" type="image/jpeg" href="Images/IMG_4682.JPG"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+<header class="bg-white/80 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
+<nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+<div class="flex items-center">
+<img alt="Quality Intelligence Logo" class="h-10 mr-3" src="Images/IMG_4682.JPG"/>
+<span class="text-2xl font-bold text-gray-900">QualityIntelligence</span>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-gray-600 hover:text-blue-600 font-medium transition duration-300" href="index.html">Home</a>
+<a class="text-gray-600 hover:text-blue-600 font-medium transition duration-300" href="about.html">About</a>
+<a class="text-gray-600 hover:text-blue-600 font-medium transition duration-300" href="index.html#features">Features</a>
+<a class="text-gray-600 hover:text-blue-600 font-medium transition duration-300" href="index.html#solutions">Solutions</a>
+<a class="text-gray-600 hover:text-blue-600 font-medium transition duration-300" href="pricing.html">Pricing</a>
+<a class="text-gray-600 hover:text-blue-600 font-medium transition duration-300" href="contact.html">Contact</a>
+<a class="bg-blue-600 text-white px-5 py-2.5 rounded-full font-semibold hover:bg-blue-700 shadow-md hover:shadow-lg transition-all duration-300" href="book-call.html">Book a Call</a>
+</div>
+<div class="md:hidden">
+<button class="text-gray-800 focus:outline-none">
+<i class="material-icons text-3xl">menu</i>
+</button>
+</div>
+</nav>
+</header>
+
+<main>
+<section class="hero-bg text-white relative overflow-hidden">
+<div class="container mx-auto px-6 py-20 text-center">
+<h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4">Book Your Free Consultation</h1>
+<p class="text-lg md:text-xl text-blue-100 max-w-3xl mx-auto">Get personalized guidance from our Business Intelligence experts. Discover how data can transform your business in just 15 minutes.</p>
+</div>
+</section>
+
+<section class="py-24 bg-white">
+<div class="container mx-auto px-6">
+<div class="grid lg:grid-cols-2 gap-16">
+<div>
+<h2 class="text-3xl font-bold text-gray-900 mb-8">Schedule Your Consultation</h2>
+<form class="space-y-6">
+<div class="grid md:grid-cols-2 gap-6">
+<div>
+<label for="firstName" class="block text-sm font-medium text-gray-700 mb-2">First Name *</label>
+<input type="text" id="firstName" name="firstName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200">
+</div>
+<div>
+<label for="lastName" class="block text-sm font-medium text-gray-700 mb-2">Last Name *</label>
+<input type="text" id="lastName" name="lastName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200">
+</div>
+</div>
+<div>
+<label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
+<input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200">
+</div>
+<div>
+<label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number *</label>
+<input type="tel" id="phone" name="phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200">
+</div>
+<div>
+<label for="company" class="block text-sm font-medium text-gray-700 mb-2">Company Name *</label>
+<input type="text" id="company" name="company" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200">
+</div>
+<div>
+<label for="jobTitle" class="block text-sm font-medium text-gray-700 mb-2">Job Title</label>
+<input type="text" id="jobTitle" name="jobTitle" placeholder="e.g., CEO, Data Manager, Operations Director" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200">
+</div>
+<div>
+<label for="companySize" class="block text-sm font-medium text-gray-700 mb-2">Company Size</label>
+<select id="companySize" name="companySize" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200">
+<option value="">Select company size</option>
+<option value="1-10">1-10 employees</option>
+<option value="11-50">11-50 employees</option>
+<option value="51-200">51-200 employees</option>
+<option value="201-500">201-500 employees</option>
+<option value="501-1000">501-1000 employees</option>
+<option value="1000+">1000+ employees</option>
+</select>
+</div>
+<div>
+<label for="industry" class="block text-sm font-medium text-gray-700 mb-2">Industry *</label>
+<select id="industry" name="industry" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200">
+<option value="">Select your industry</option>
+<option value="healthcare">Healthcare</option>
+<option value="finance">Finance & Banking</option>
+<option value="manufacturing">Manufacturing</option>
+<option value="retail">Retail & E-commerce</option>
+<option value="technology">Technology</option>
+<option value="education">Education</option>
+<option value="government">Government</option>
+<option value="consulting">Consulting</option>
+<option value="real-estate">Real Estate</option>
+<option value="other">Other</option>
+</select>
+</div>
+<div>
+<label for="budget" class="block text-sm font-medium text-gray-700 mb-2">Monthly Budget Range</label>
+<select id="budget" name="budget" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200">
+<option value="">Select budget range (optional)</option>
+<option value="under-1k">Under $1,000</option>
+<option value="1k-3k">$1,000 - $3,000</option>
+<option value="3k-6k">$3,000 - $6,000</option>
+<option value="6k-10k">$6,000 - $10,000</option>
+<option value="10k+">$10,000+</option>
+<option value="not-sure">Not sure yet</option>
+</select>
+</div>
+<div>
+<label for="timeframe" class="block text-sm font-medium text-gray-700 mb-2">Project Timeframe</label>
+<select id="timeframe" name="timeframe" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200">
+<option value="">When do you need to start?</option>
+<option value="immediately">Immediately (within 2 weeks)</option>
+<option value="1-month">Within 1 month</option>
+<option value="1-3-months">1-3 months</option>
+<option value="3-6-months">3-6 months</option>
+<option value="exploring">Just exploring options</option>
+</select>
+</div>
+<div>
+<label for="preferredTime" class="block text-sm font-medium text-gray-700 mb-2">Preferred Call Time</label>
+<select id="preferredTime" name="preferredTime" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200">
+<option value="">Select preferred time (MST)</option>
+<option value="morning">Morning (9 AM - 12 PM)</option>
+<option value="afternoon">Afternoon (12 PM - 4 PM)</option>
+<option value="evening">Early Evening (4 PM - 6 PM)</option>
+<option value="flexible">I'm flexible</option>
+</select>
+</div>
+<div>
+<label for="challenges" class="block text-sm font-medium text-gray-700 mb-2">Current Data Challenges *</label>
+<textarea id="challenges" name="challenges" rows="4" required placeholder="What specific data or reporting challenges is your business facing? The more details you provide, the better we can tailor our consultation to your needs." class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200"></textarea>
+</div>
+<div>
+<label for="goals" class="block text-sm font-medium text-gray-700 mb-2">Business Goals</label>
+<textarea id="goals" name="goals" rows="3" placeholder="What would success look like for your BI project? What business outcomes are you hoping to achieve?" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200"></textarea>
+</div>
+<div class="flex items-start">
+<div class="flex items-center h-5">
+<input id="agree" name="agree" type="checkbox" required class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2">
+</div>
+<div class="ml-3 text-sm">
+<label for="agree" class="text-gray-600">I agree to the <a href="privacy.html" class="text-blue-600 hover:underline">Privacy Policy</a> and consent to being contacted about this consultation request. *</label>
+</div>
+</div>
+<button type="submit" class="w-full bg-blue-600 text-white font-semibold py-4 px-6 rounded-lg hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 transition duration-200 transform hover:scale-105">
+<i class="material-icons mr-2 inline">event</i>
+Schedule My Free Consultation
+</button>
+</form>
+</div>
+
+<div>
+<h2 class="text-3xl font-bold text-gray-900 mb-8">What to Expect</h2>
+<div class="space-y-6">
+<div class="flex items-start">
+<div class="flex-shrink-0">
+<div class="flex items-center justify-center h-10 w-10 rounded-full bg-blue-100 text-blue-600 text-sm font-bold">1</div>
+</div>
+<div class="ml-4">
+<h3 class="text-lg font-semibold text-gray-900">Discovery Call (15 minutes)</h3>
+<p class="text-gray-600">We'll discuss your current data challenges, business goals, and explore how Business Intelligence can drive growth for your organization.</p>
+</div>
+</div>
+
+<div class="flex items-start">
+<div class="flex-shrink-0">
+<div class="flex items-center justify-center h-10 w-10 rounded-full bg-blue-100 text-blue-600 text-sm font-bold">2</div>
+</div>
+<div class="ml-4">
+<h3 class="text-lg font-semibold text-gray-900">Custom Recommendations</h3>
+<p class="text-gray-600">Based on our conversation, we'll provide tailored recommendations for your BI strategy, including technology platforms and implementation approach.</p>
+</div>
+</div>
+
+<div class="flex items-start">
+<div class="flex-shrink-0">
+<div class="flex items-center justify-center h-10 w-10 rounded-full bg-blue-100 text-blue-600 text-sm font-bold">3</div>
+</div>
+<div class="ml-4">
+<h3 class="text-lg font-semibold text-gray-900">Next Steps (If Interested)</h3>
+<p class="text-gray-600">If we're a good fit, we'll outline a detailed project plan, timeline, and proposal for your Business Intelligence transformation.</p>
+</div>
+</div>
+</div>
+
+<div class="mt-12 p-6 bg-green-50 rounded-xl border border-green-200">
+<div class="flex items-start">
+<div class="flex-shrink-0">
+<i class="material-icons text-green-600 text-2xl">check_circle</i>
+</div>
+<div class="ml-3">
+<h3 class="text-lg font-semibold text-green-800 mb-2">100% Free 15-Minute Consultation</h3>
+<p class="text-green-700">No strings attached. Even if we're not the right fit, you'll walk away with valuable insights about your data strategy and actionable recommendations.</p>
+</div>
+</div>
+</div>
+
+<div class="mt-8 space-y-4">
+<h3 class="text-xl font-semibold text-gray-900">Why Choose Quality Intelligence?</h3>
+<div class="space-y-3">
+<div class="flex items-center">
+<i class="material-icons text-blue-600 mr-3">star</i>
+<span class="text-gray-600">5+ years of BI expertise across multiple industries</span>
+</div>
+<div class="flex items-center">
+<i class="material-icons text-blue-600 mr-3">security</i>
+<span class="text-gray-600">HIPAA, SOX, and GDPR compliance experience</span>
+</div>
+<div class="flex items-center">
+<i class="material-icons text-blue-600 mr-3">speed</i>
+<span class="text-gray-600">Fast implementation with proven methodologies</span>
+</div>
+<div class="flex items-center">
+<i class="material-icons text-blue-600 mr-3">support</i>
+<span class="text-gray-600">Ongoing support and training included</span>
+</div>
+<div class="flex items-center">
+<i class="material-icons text-blue-600 mr-3">savings</i>
+<span class="text-gray-600">Up to 25% cost savings vs. in-house teams</span>
+</div>
+</div>
+</div>
+
+<div class="mt-12 p-6 bg-blue-50 rounded-xl">
+<h3 class="text-lg font-semibold text-gray-900 mb-3">Prefer to Talk Now?</h3>
+<p class="text-gray-600 mb-4">If you have urgent questions or prefer to speak immediately, give us a call during business hours.</p>
+<div class="flex items-center text-blue-600 font-semibold">
+<i class="material-icons mr-2">phone</i>
+<span>+1 (801) 839-4562</span>
+</div>
+<p class="text-sm text-gray-500 mt-2">Monday - Friday, 9 AM - 6 PM MST</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-16 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Don't just take our word for it. Here's what business leaders say about working with Quality Intelligence.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+<div class="bg-white rounded-lg p-6 shadow-sm">
+<div class="flex items-center mb-4">
+<div class="flex text-yellow-400">
+<i class="material-icons">star</i>
+<i class="material-icons">star</i>
+<i class="material-icons">star</i>
+<i class="material-icons">star</i>
+<i class="material-icons">star</i>
+</div>
+</div>
+<p class="text-gray-600 mb-4">"Quality Intelligence transformed our reporting from hours of manual work to real-time dashboards. The ROI was evident within the first month."</p>
+<div class="border-t pt-4">
+<p class="font-semibold text-gray-900">Sarah Johnson</p>
+<p class="text-sm text-gray-500">Operations Director, MedTech Solutions</p>
+</div>
+</div>
+<div class="bg-white rounded-lg p-6 shadow-sm">
+<div class="flex items-center mb-4">
+<div class="flex text-yellow-400">
+<i class="material-icons">star</i>
+<i class="material-icons">star</i>
+<i class="material-icons">star</i>
+<i class="material-icons">star</i>
+<i class="material-icons">star</i>
+</div>
+</div>
+<p class="text-gray-600 mb-4">"Their expertise in healthcare compliance made our BI implementation seamless. We couldn't be happier with the results."</p>
+<div class="border-t pt-4">
+<p class="font-semibold text-gray-900">Dr. Michael Chen</p>
+<p class="text-sm text-gray-500">Chief Medical Officer, Regional Health Network</p>
+</div>
+</div>
+<div class="bg-white rounded-lg p-6 shadow-sm">
+<div class="flex items-center mb-4">
+<div class="flex text-yellow-400">
+<i class="material-icons">star</i>
+<i class="material-icons">star</i>
+<i class="material-icons">star</i>
+<i class="material-icons">star</i>
+<i class="material-icons">star</i>
+</div>
+</div>
+<p class="text-gray-600 mb-4">"The team's responsiveness and technical knowledge exceeded our expectations. They delivered exactly what we needed, on time and on budget."</p>
+<div class="border-t pt-4">
+<p class="font-semibold text-gray-900">David Rodriguez</p>
+<p class="text-sm text-gray-500">CFO, Mountain Manufacturing</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="bg-gray-900 text-white">
+<div class="container mx-auto px-6 py-16">
+<div class="grid md:grid-cols-4 gap-12">
+<div class="md:col-span-1">
+<h3 class="text-2xl font-bold mb-4">Quality Intelligence</h3>
+<p class="text-gray-400">Empowering businesses through data-driven clarity.</p>
+</div>
+<div>
+<h3 class="text-lg font-semibold tracking-wider uppercase mb-4">Quick Links</h3>
+<ul class="space-y-3">
+<li><a class="text-gray-400 hover:text-white transition-colors" href="index.html#features">Features</a></li>
+<li><a class="text-gray-400 hover:text-white transition-colors" href="index.html#solutions">Solutions</a></li>
+<li><a class="text-gray-400 hover:text-white transition-colors" href="about.html">About Us</a></li>
+<li><a class="text-gray-400 hover:text-white transition-colors" href="pricing.html">Pricing</a></li>
+<li><a class="text-gray-400 hover:text-white transition-colors" href="contact.html">Contact</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-semibold tracking-wider uppercase mb-4">Legal</h3>
+<ul class="space-y-3">
+<li><a class="text-gray-400 hover:text-white transition-colors" href="privacy.html">Privacy Policy</a></li>
+<li><a class="text-gray-400 hover:text-white transition-colors" href="terms.html">Terms & Conditions</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-semibold tracking-wider uppercase mb-4">Contact Us</h3>
+<ul class="space-y-3">
+<li class="flex items-start">
+<i class="material-icons text-lg mr-3 mt-1 text-blue-400">email</i>
+<span class="text-gray-400">contact@qualityintelligence.com</span>
+</li>
+<li class="flex items-start">
+<i class="material-icons text-lg mr-3 mt-1 text-blue-400">phone</i>
+<span class="text-gray-400">+1 (801) 839-4562</span>
+</li>
+<li class="flex items-start">
+<i class="material-icons text-lg mr-3 mt-1 text-blue-400">location_on</i>
+<span class="text-gray-400">1860 Logan Ave<br/>Salt Lake City, UT 84108</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="mt-12 border-t border-gray-800 pt-8 text-center text-gray-500">
+<p>© 2024 Quality Intelligence. All Rights Reserved. A commitment to data excellence.</p>
+</div>
+</div>
+</footer>
+</body>
+</html>
