@@ -1,0 +1,119 @@
+/* Quality Intelligence - Shared Styles */
+/* Optimized for performance and maintainability */
+
+/* Base Styles */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Background Gradients */
+.hero-bg {
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+}
+
+.cta-bg {
+    background: linear-gradient(135deg, #3b82f6 0%, #1e3a8a 100%);
+}
+
+/* Card Animations */
+.feature-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.feature-card:hover .icon-bg {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.solution-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.solution-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+/* Icon Transitions */
+.icon-bg {
+    transition: transform 0.3s ease;
+}
+
+/* Pricing Card Animations */
+.pricing-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px -5px rgb(0 0 0 / 0.1), 0 5px 15px -5px rgb(0 0 0 / 0.1);
+}
+
+/* Button Animations */
+.btn-hover-lift {
+    transition: all 0.3s ease;
+}
+
+.btn-hover-lift:hover {
+    transform: translateY(-1px);
+}
+
+/* Google Calendar Button Styling */
+.calendar-scheduling-button {
+    background-color: #2563eb !important;
+    color: white !important;
+    padding: 12px 24px !important;
+    border-radius: 9999px !important;
+    font-weight: 600 !important;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1) !important;
+    transition: all 0.3s ease !important;
+    border: none !important;
+    font-size: 16px !important;
+    font-family: 'Inter', sans-serif !important;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+}
+
+.calendar-scheduling-button:hover {
+    background-color: #1d4ed8 !important;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1) !important;
+    transform: translateY(-1px) !important;
+}
+
+.calendar-scheduling-button:focus {
+    outline: none !important;
+    box-shadow: 0 0 0 4px rgb(59 130 246 / 0.3) !important;
+}
+
+.calendar-scheduling-button::before {
+    content: "📅";
+    margin-right: 4px;
+}
+
+/* Performance Optimizations */
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reduce layout shifts */
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+/* Optimize animations for performance */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

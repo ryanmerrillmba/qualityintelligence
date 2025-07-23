@@ -5,23 +5,25 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Book a Call - Quality Intelligence</title>
 <link rel="icon" type="image/jpeg" href="Images/IMG_4682.JPG"/>
+<!-- Performance Optimization: Preconnect hints -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="dns-prefetch" href="//cdn.tailwindcss.com">
+<link rel="dns-prefetch" href="//calendar.google.com">
+
+<!-- Optimized resource loading -->
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
-<style type="text/tailwindcss">
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        .hero-bg {
-            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
-        }
-    </style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons&amp;display=swap" rel="stylesheet"/>
+
+<!-- Shared styles -->
+<link rel="stylesheet" href="assets/styles.css">
 </head>
 <body class="bg-gray-50 text-gray-800">
 <header class="bg-white/80 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
 <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
 <div class="flex items-center">
-<img alt="Quality Intelligence Logo" class="h-10 mr-3" src="Images/IMG_4682.JPG"/>
+<img alt="Quality Intelligence - Business Intelligence as a Service" class="h-10 mr-3" src="Images/IMG_4682.JPG"/>
 <span class="text-2xl font-bold text-gray-900">QualityIntelligence</span>
 </div>
 <div class="hidden md:flex items-center space-x-8">
@@ -59,43 +61,6 @@
 <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-8 text-center">
 <!-- Google Calendar Appointment Scheduling begin -->
 <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
-<style>
-/* Override Google Calendar button styling to match site design */
-.calendar-scheduling-button {
-    background-color: #2563eb !important;
-    color: white !important;
-    padding: 12px 24px !important;
-    border-radius: 9999px !important;
-    font-weight: 600 !important;
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1) !important;
-    transition: all 0.3s ease !important;
-    border: none !important;
-    font-size: 16px !important;
-    font-family: 'Inter', sans-serif !important;
-    text-decoration: none !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    gap: 8px !important;
-}
-
-.calendar-scheduling-button:hover {
-    background-color: #1d4ed8 !important;
-    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1) !important;
-    transform: translateY(-1px) !important;
-}
-
-.calendar-scheduling-button:focus {
-    outline: none !important;
-    box-shadow: 0 0 0 4px rgb(59 130 246 / 0.3) !important;
-}
-
-/* Add icon to button */
-.calendar-scheduling-button::before {
-    content: "📅";
-    margin-right: 4px;
-}
-</style>
 <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
 <script>
 (function() {
